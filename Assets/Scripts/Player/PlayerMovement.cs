@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
     Vector2 direction = new Vector2();
 
+    Vector3 mousePos;
+    Vector2 rotationDirection = new Vector2();
+
     [SerializeField] float speed = 3f;
 
     void AssignVariables()
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        RotatePlayer();
     }
 
     void MovePlayer()
@@ -38,6 +42,16 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector2(horizontalInput, verticalInput);
         direction.Normalize();
 
-        player.Translate(direction * Time.deltaTime * speed);
+        player.Translate(direction * Time.deltaTime * speed, Space.World);
+    }
+
+    void RotatePlayer()
+    {
+        //points character towards mouse position
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        rotationDirection.Set(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
+        transform.up = rotationDirection;
     }
 }
