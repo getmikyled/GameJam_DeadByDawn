@@ -13,6 +13,8 @@ public class Bullet : MonoBehaviour
     public void Fire(Vector3 direction) 
     {
         transform.up = direction;
+        gameObject.SetActive(true);
+        shooting = true;
 
         while (shooting)
         {
@@ -23,7 +25,9 @@ public class Bullet : MonoBehaviour
 
     private void HideBullet()
     {
-        // NEEDS IF STATEMENT
-        gameObject.SetActive(false);
+        if (!GetComponent<Renderer>().isVisible)
+        {
+            shooting = false;
+        }
     }
 }
