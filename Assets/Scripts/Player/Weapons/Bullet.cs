@@ -5,10 +5,16 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
-    [SerializeField] protected float damage = 10f;
     [SerializeField] protected float bulletSpeed = 2f;
     Boolean shooting = false;
+
+    private void Update()
+    {
+        if(shooting)
+        {
+            transform.Translate(transform.up * bulletSpeed * Time.deltaTime, Space.World);
+        }
+    }
 
     public void Fire(Vector3 direction) 
     {
@@ -16,18 +22,13 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(true);
         shooting = true;
 
-        while (shooting)
-        {
-            transform.Translate(direction * bulletSpeed * Time.deltaTime, Space.World);
-            HideBullet();
-        }
+        StartCoroutine(HideBullet());
     }
 
-    private void HideBullet()
+    private IEnumerator HideBullet()
     {
-        if (!GetComponent<Renderer>().isVisible)
-        {
-            shooting = false;
-        }
+        yield return new WaitForSeconds(3);
+        shooting = false;
+        gameObject.SetActive(false);
     }
 }

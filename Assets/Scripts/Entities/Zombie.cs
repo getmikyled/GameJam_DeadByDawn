@@ -5,14 +5,16 @@ using UnityEngine;
 public class Zombie : Entity
 {
 
-    protected float damage = 5f;
+    protected float dealDamage = 5f;
 
+    // Get Methods
+    public float GetDamage() { return dealDamage; }
+
+    // start and update methods
     private void Start()
     {
         health = 20f;
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(health <= 0)
@@ -20,6 +22,20 @@ public class Zombie : Entity
             Kill();
         }
     }
-    
-    public float GetDamage() { return damage; }
+
+    // On collision activity
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print(collision.transform.name + "Detected");
+        if (collision.gameObject.tag == "Weapon")
+        {
+            print("hit");
+            TakeDamage(collision.transform.GetComponent<Damage>().damage);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+    }
 }

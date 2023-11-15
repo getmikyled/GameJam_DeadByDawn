@@ -17,7 +17,7 @@ public class GunManager : MonoBehaviour
 
     protected virtual void Gun()
     {
-        ammoCount = 10;
+        ammoCount = 12;
     }
 
     // Start is called before the first frame update
@@ -48,10 +48,24 @@ public class GunManager : MonoBehaviour
     void FireBullet()
     {
         if (Input.GetMouseButtonDown(0)) {
+
+            // Resets ID
+            ReloadGun();
+
             currentBullet = bulletArray[bulletID];
             bulletID++;
             currentBullet.GetComponent<Bullet>().Fire(player.up);
             currentBullet.position = player.position;
+        }
+    }
+
+    void ReloadGun() {
+        {
+            if (bulletID == ammoCount - 1)
+            {
+                Debug.Log("Reload");
+                bulletID = 0;
+            }
         }
     }
 }
