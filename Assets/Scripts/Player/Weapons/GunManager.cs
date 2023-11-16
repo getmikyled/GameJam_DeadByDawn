@@ -23,6 +23,7 @@ public class GunManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Gun();
         FindBullets();
         player = GameObject.Find("Player").transform;
     }
@@ -63,7 +64,7 @@ public class GunManager : MonoBehaviour
         {
             if (bulletID == ammoCount - 1)
             {
-                Debug.Log("Reload");
+                Debug.Log("Reloaded");
                 bulletID = 0;
             }
         }

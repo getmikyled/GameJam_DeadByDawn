@@ -9,12 +9,12 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
-    Vector2 direction = new Vector2();
+    Vector3 direction = new Vector2();
 
     Vector3 mousePos;
     Vector2 rotationDirection = new Vector2();
 
-    [SerializeField] float speed = 3f;
+    [SerializeField] float speed = 10f;
 
     void AssignVariables()
     {
@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
         //establish direction based on player input
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-        direction = new Vector2(horizontalInput, verticalInput);
+        direction = new Vector3(horizontalInput, verticalInput);
         direction.Normalize();
 
-        player.Translate(direction * Time.deltaTime * speed, Space.World);
+        player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + direction * Time.deltaTime * speed);
     }
 
     void RotatePlayer()
