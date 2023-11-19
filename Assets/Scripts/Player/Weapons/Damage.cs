@@ -6,4 +6,6 @@ public class Damage : MonoBehaviour
 {
 
     [SerializeField] public float damage = 10f;
+
+ 
 }
