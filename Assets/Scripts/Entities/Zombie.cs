@@ -18,8 +18,6 @@ public class Zombie : Entity
     // start and update methods
     private void Start()
     {
-        health = 20f;
-        speed = 2f;
         player = GameObject.Find("Player").transform;
     }
     void Update()

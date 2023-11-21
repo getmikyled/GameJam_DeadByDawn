@@ -15,6 +15,8 @@ public class GunManager : MonoBehaviour
     int bulletID = 0;
     Transform currentBullet;
 
+    [SerializeField] AudioClip reloadSound;
+
     protected virtual void Gun()
     {
         ammoCount = 12;
@@ -66,6 +68,7 @@ public class GunManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
+                AudioManager.audioManager.PlayAudio(reloadSound, Camera.main.transform, 1f);
                 Debug.Log("Reloaded");
                 bulletID = 0;
             }
