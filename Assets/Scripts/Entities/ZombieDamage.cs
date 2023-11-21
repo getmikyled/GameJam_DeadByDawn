@@ -11,7 +11,7 @@ public class ZombieDamage : Damage
     // Start is called before the first frame update
     void Start()
     {
-        damage = 5f;
+        damage = 1f;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -29,7 +29,5 @@ public class ZombieDamage : Damage
         yield return new WaitForSeconds(seconds);
 
         damaged = false;
-        Debug.Log("Can cause damage");
-
     }
 }

@@ -33,6 +33,8 @@ public class GunManager : MonoBehaviour
     {
         if (gunActive)
         {
+            // Resets ID
+            ReloadGun();
             FireBullet();
         }
     }
@@ -49,20 +51,20 @@ public class GunManager : MonoBehaviour
     void FireBullet()
     {
         if (Input.GetMouseButtonDown(0)) {
-
-            // Resets ID
-            ReloadGun();
-
-            currentBullet = bulletArray[bulletID];
-            bulletID++;
-            currentBullet.GetComponent<Bullet>().Fire(player.up);
-            currentBullet.position = player.position;
+            try
+            {
+                currentBullet = bulletArray[bulletID];
+                bulletID++;
+                currentBullet.GetComponent<Bullet>().Fire(player.up);
+                currentBullet.position = player.position;
+            }
+            catch (IndexOutOfRangeException) {}
         }
     }
 
     void ReloadGun() {
         {
-            if (bulletID == ammoCount - 1)
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 Debug.Log("Reloaded");
                 bulletID = 0;
