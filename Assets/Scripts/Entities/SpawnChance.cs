@@ -11,7 +11,7 @@ public class SpawnChance : MonoBehaviour
 
     private void Awake()
     {
-        if (Random.Range(min, max) <=spawnChance)
+        if (Random.Range(min, max) <= spawnChance)
         {
             transform.GetChild(0).gameObject.SetActive(true);
         }

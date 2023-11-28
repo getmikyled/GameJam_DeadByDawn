@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(horizontalInput, verticalInput);
         direction.Normalize();
 
+        Debug.Log(direction * Time.deltaTime * speed);
+
         player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (direction * Time.deltaTime * speed));
     }
 

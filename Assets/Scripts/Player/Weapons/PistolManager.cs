@@ -6,6 +6,6 @@ public class PistolManager : GunManager
 {
     protected override void Gun()
     {
-        ammoCount = 12;
+        magAmount = 6;
     }
 }

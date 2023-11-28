@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Zombie : Entity
 {
@@ -11,6 +12,7 @@ public class Zombie : Entity
     Vector3 direction = new Vector3();
     Vector3 playerPosition;
 
+    Detection zombieDetection;
 
     // Get Methods
     public float GetDamage() { return dealDamage; }
@@ -19,15 +21,16 @@ public class Zombie : Entity
     private void Start()
     {
         player = GameObject.Find("Player").transform;
+        zombieDetection = gameObject.GetComponentInChildren<Detection>();
     }
     void Update()
     {
-        if(health <= 0)
+        if (health <= 0)
         {
             Kill();
         }
+            Move();
 
-        Move();
     }
 
     // On collision activity
@@ -45,12 +48,17 @@ public class Zombie : Entity
         health -= damage;
     }
 
+    private bool PlayerInRange() {return zombieDetection.detectedPlayer;}
+
     private void Move()
     {
-        playerPosition = player.position;
-        direction = playerPosition - transform.position;
-        direction.Normalize();
+        if (PlayerInRange())
+        {
+            playerPosition = player.position;
+            direction = playerPosition - transform.position;
+            direction.Normalize();
 
-        transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime));
+            transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime));
+        }
     }
 }

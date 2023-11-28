@@ -11,7 +11,7 @@ public class GunManager : MonoBehaviour
     Transform[] bulletArray;
 
     Boolean gunActive = true;
-    protected int ammoCount;
+    protected int magAmount;
     int bulletID = 0;
     Transform currentBullet;
 
@@ -19,7 +19,7 @@ public class GunManager : MonoBehaviour
 
     protected virtual void Gun()
     {
-        ammoCount = 12;
+        magAmount = 6;
     }
 
     // Start is called before the first frame update
