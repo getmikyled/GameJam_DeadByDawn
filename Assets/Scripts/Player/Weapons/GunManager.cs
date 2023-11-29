@@ -11,11 +11,16 @@ public class GunManager : MonoBehaviour
     Transform[] bulletArray;
 
     Boolean gunActive = true;
+    bool canReload = true;
+
     protected int magAmount;
     int bulletID = 0;
+
     Transform currentBullet;
 
     [SerializeField] AudioClip reloadSound;
+    [Range(0f, 100f)]
+    [SerializeField] float volume = 0.5f;
 
     protected virtual void Gun()
     {
@@ -66,12 +71,19 @@ public class GunManager : MonoBehaviour
 
     void ReloadGun() {
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) && canReload)
             {
-                AudioManager.audioManager.PlayAudio(reloadSound, Camera.main.transform, 1f);
-                Debug.Log("Reloaded");
+                AudioManager.audioManager.PlayAudio(reloadSound, Camera.main.transform, volume);
+                canReload = false;
+                StartCoroutine(ReloadTimer(reloadSound.length));
                 bulletID = 0;
             }
         }
     }
+
+    private IEnumerator ReloadTimer(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        canReload = true;
+    } 
 }

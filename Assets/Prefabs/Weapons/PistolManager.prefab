@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadSound: {fileID: 8300000, guid: 1a2a80fe8e2ab054586427857842673b, type: 3}
+  volume: 0.2
 --- !u!1001 &771516138535562944
 PrefabInstance:
   m_ObjectHideFlags: 0

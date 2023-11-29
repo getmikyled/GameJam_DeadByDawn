@@ -16,6 +16,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] Sprite deadHeartSprite;
 
     [SerializeField] AudioClip hurtSound;
+    [Range(0f, 100f)]
+    [SerializeField] float volume = 0.5f;
 
     private void Start()
     {
@@ -32,7 +34,7 @@ public class PlayerStats : MonoBehaviour
         {
             hearts[(int)health - 1].GetComponent<Image>().sprite = deadHeartSprite;
             health -= damage;
-            AudioManager.audioManager.PlayAudio(hurtSound, transform, 1f);
+            AudioManager.audioManager.PlayAudio(hurtSound, transform, volume);
 
             if (health == 0)
             {

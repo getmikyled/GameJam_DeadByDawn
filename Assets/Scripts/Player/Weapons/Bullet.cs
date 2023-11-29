@@ -8,6 +8,10 @@ public class Bullet : MonoBehaviour
     [SerializeField] protected float bulletSpeed = 2f;
     Boolean shooting = false;
 
+    [Range(0f, 100f)]
+    [SerializeField] float volume = 0.5f;
+    [SerializeField] AudioClip fireSound;
+
     private void Update()
     {
         if(shooting)
@@ -21,6 +25,8 @@ public class Bullet : MonoBehaviour
         transform.up = direction;
         gameObject.SetActive(true);
         shooting = true;
+
+        AudioManager.audioManager.PlayAudio(fireSound, transform, volume);
 
         StartCoroutine(HideBullet());
     }
