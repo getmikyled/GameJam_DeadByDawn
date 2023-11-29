@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StaircaseManager : MonoBehaviour
 {
+    [SerializeField] GameObject staircase;
+
     Vector3 teleportSpot;
 
     private void Start()
@@ -12,12 +14,11 @@ public class StaircaseManager : MonoBehaviour
         teleportSpot = transform.GetChild(0).position;
     }
 
-    [SerializeField] string scenePath;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(scenePath);
+            
         }
     }
 }
