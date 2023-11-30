@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectiveObject : MonoBehaviour
+public class FoodObjective : MonoBehaviour
 {
     Transform objectiveUI;
+    [SerializeField] Sprite cookiePlayerSprite;
 
     private void Start()
     {
@@ -16,6 +17,8 @@ public class ObjectiveObject : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             objectiveUI.transform.GetComponent<Objective>().CompletedTask(1);
+            gameObject.SetActive(false);
+            collision.transform.GetComponent<SpriteRenderer>().sprite = cookiePlayerSprite;
         }
     }
 }

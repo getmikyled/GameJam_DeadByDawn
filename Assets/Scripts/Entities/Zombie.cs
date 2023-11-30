@@ -39,7 +39,6 @@ public class Zombie : Entity
     {
         if (collision.gameObject.tag == "Weapon")
         {
-            print("hit");
             TakeDamage(collision.transform.GetComponent<Damage>().damage);
         }
     }

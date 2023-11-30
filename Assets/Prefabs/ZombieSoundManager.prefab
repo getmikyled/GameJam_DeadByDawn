@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b85d49f8e84a94990a61f1f18c51c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 0.2
+  volume: 0.1
   zombieSound1: {fileID: 8300000, guid: 16b0bdfdf3efe6b42a9ada5a96ce583f, type: 3}
