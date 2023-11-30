@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEngine.GridBrushBase;
 
 public class Zombie : Entity
 {
@@ -60,5 +61,6 @@ public class Zombie : Entity
 
             transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime));
         }
+        transform.up = direction;
     }
 }

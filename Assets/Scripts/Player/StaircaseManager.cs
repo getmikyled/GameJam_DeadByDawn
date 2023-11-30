@@ -18,7 +18,7 @@ public class StaircaseManager : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            
+            collision.transform.position = staircase.transform.GetComponent<StaircaseManager>().teleportSpot;
         }
     }
 }
