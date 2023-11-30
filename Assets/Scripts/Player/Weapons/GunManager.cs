@@ -12,15 +12,20 @@ public class GunManager : MonoBehaviour
 
     Boolean gunActive = true;
     bool canReload = true;
+    bool canShoot = true;
 
     protected int magAmount;
     int bulletID = 0;
+
+    [Range(0f, 5f)]
+    [SerializeField] float fireDelay = 0.5f;
 
     Transform currentBullet;
 
     [SerializeField] AudioClip reloadSound;
     [Range(0f, 100f)]
     [SerializeField] float volume = 0.5f;
+    
 
     protected virtual void Gun()
     {
@@ -58,14 +63,19 @@ public class GunManager : MonoBehaviour
     void FireBullet()
     {
         if (Input.GetMouseButtonDown(0)) {
-            try
+            if (canShoot)
             {
-                currentBullet = bulletArray[bulletID];
-                bulletID++;
-                currentBullet.GetComponent<Bullet>().Fire(player.up);
-                currentBullet.position = player.position;
+                try
+                {
+                    currentBullet = bulletArray[bulletID];
+                    bulletID++;
+                    currentBullet.GetComponent<Bullet>().Fire(player.up);
+                    canShoot = false;
+                    StartCoroutine(FireTimer(fireDelay));
+                    currentBullet.position = player.position;
+                }
+                catch (IndexOutOfRangeException) { }
             }
-            catch (IndexOutOfRangeException) {}
         }
     }
 
@@ -85,5 +95,11 @@ public class GunManager : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         canReload = true;
-    } 
+    }
+
+    private IEnumerator FireTimer(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        canShoot = true;
+    }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodObjective : MonoBehaviour
+public class ObjectiveObject : MonoBehaviour
 {
     Transform objectiveUI;
 
