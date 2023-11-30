@@ -15,6 +15,9 @@ public class Zombie : Entity
 
     Detection zombieDetection;
 
+    [SerializeField] float speedMultiplier = 0.1f;
+    [SerializeField] float speedDecreaser = 0.85f;
+
     // Get Methods
     public float GetDamage() { return dealDamage; }
 
@@ -40,6 +43,7 @@ public class Zombie : Entity
         if (collision.gameObject.tag == "Weapon")
         {
             TakeDamage(collision.transform.GetComponent<Damage>().damage);
+            speed = speed * speedDecreaser;
         }
     }
 
@@ -58,7 +62,7 @@ public class Zombie : Entity
             direction = playerPosition - transform.position;
             direction.Normalize();
 
-            transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime));
+            transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime * speedMultiplier));
         }
         transform.up = direction;
     }

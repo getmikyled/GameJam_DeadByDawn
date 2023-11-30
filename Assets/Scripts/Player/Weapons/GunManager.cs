@@ -68,9 +68,13 @@ public class GunManager : MonoBehaviour
                 try
                 {
                     currentBullet = bulletArray[bulletID];
+                    Debug.Log("Shot bullet " + bulletID + bulletArray[bulletID].name + " / " + bulletArray.Length);
                     bulletID++;
+                    if (bulletID >= 7)
+                    {
+                        return;
+                    }
                     currentBullet.GetComponent<Bullet>().Fire(player.up);
-                    canShoot = false;
                     StartCoroutine(FireTimer(fireDelay));
                     currentBullet.position = player.position;
                 }
@@ -99,7 +103,8 @@ public class GunManager : MonoBehaviour
 
     private IEnumerator FireTimer(float seconds)
     {
-        yield return new WaitForSeconds(seconds);
+        canShoot = false;
+        yield return new WaitForSeconds(0.6f);
         canShoot = true;
     }
 }

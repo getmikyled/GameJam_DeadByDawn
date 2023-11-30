@@ -3070,7 +3070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041112679204333501, guid: afa6368d763d05048993148350e4b443, type: 3}
       propertyPath: fireDelay
-      value: 0.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7056962548052804566, guid: afa6368d763d05048993148350e4b443, type: 3}
       propertyPath: m_Name
@@ -7075,10 +7075,6 @@ PrefabInstance:
     - target: {fileID: 682467366033760704, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 682467366033760705, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
-      propertyPath: speed
-      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 682467366033760707, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: m_RootOrder

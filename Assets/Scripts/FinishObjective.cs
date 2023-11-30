@@ -16,7 +16,6 @@ public class FinishObjective : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collided" + objectivesUIScript.taskOneCompleted);
         if (objectivesUIScript.taskOneCompleted) {
             if (collision.CompareTag("Player"))
             {
