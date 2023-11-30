@@ -242,7 +242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (44)
+      value: Red 7
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -291,6 +291,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -396,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_RootOrder
@@ -857,7 +873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (50)
+      value: Blue 7
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -906,6 +922,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -1116,7 +1148,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (11)
+      value: Red 2
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -1165,6 +1197,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -1447,6 +1495,14 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -1768,7 +1824,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (7)
+      value: Blue
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -1817,6 +1873,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8124628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -1918,7 +1994,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (43)
+      value: Red 6
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -1967,6 +2043,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -2138,11 +2230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.7
+      value: -14.736
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: 0.711
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2192,7 +2284,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (40)
+      value: Blue 6
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -2242,6 +2334,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
 --- !u!4 &683370212 stripped
@@ -2258,7 +2370,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (49)
+      value: Red 9
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -2307,6 +2419,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -2372,7 +2500,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (34)
+      value: Red 5
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -2421,6 +2549,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -2922,7 +3066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041112679204333501, guid: afa6368d763d05048993148350e4b443, type: 3}
       propertyPath: volume
-      value: 0.21
+      value: 0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041112679204333501, guid: afa6368d763d05048993148350e4b443, type: 3}
+      propertyPath: fireDelay
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7056962548052804566, guid: afa6368d763d05048993148350e4b443, type: 3}
       propertyPath: m_Name
@@ -3010,7 +3158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (32)
+      value: Blue 5
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -3059,6 +3207,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8124628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -3188,7 +3356,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (45)
+      value: Red 8
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -3237,6 +3405,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -5086,7 +5270,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (48)
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -5135,6 +5319,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.33962262
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.33962262
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.33962262
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -5449,7 +5653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (6)
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -5498,6 +5702,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4481132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4481132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -5576,7 +5800,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (12)
+      value: Blue 2
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -5625,6 +5849,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8124628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -5791,7 +6035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_RootOrder
@@ -5914,7 +6158,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (18)
+      value: Blue 3
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -5963,6 +6207,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8124628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -6040,7 +6304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_RootOrder
@@ -6086,6 +6350,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161952, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161952, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.299
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
 --- !u!4 &1560526150 stripped
@@ -6102,7 +6382,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (25)
+      value: Red 4
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -6152,6 +6432,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
 --- !u!1001 &1588989100
@@ -6167,7 +6463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_RootOrder
@@ -6224,7 +6520,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (20)
+      value: Red 3
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -6273,6 +6569,22 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -6676,7 +6988,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Name
-      value: ZombieSpawner (28)
+      value: Blue 4
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
@@ -6725,6 +7037,26 @@ PrefabInstance:
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8124628
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
@@ -7294,7 +7626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007789, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_RootOrder
@@ -7744,9 +8076,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161952, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: health
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161954, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Mass
