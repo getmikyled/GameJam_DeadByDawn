@@ -13,6 +13,6 @@ public class YouLoseScreen : MonoBehaviour
 
     public void MainMenu()
     {
-        Debug.Log("Need to create main menu");
+        SceneManager.LoadScene("Main Menu");
     }
 }

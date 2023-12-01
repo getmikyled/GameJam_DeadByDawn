@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    bool paused = false;
+    float sceneStartDelay = 1f;
 
     Transform player;
 
@@ -25,12 +27,16 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         AssignVariables();
+        StartCoroutine(DelayStart());
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        MovePlayer();
+        if (!paused)
+        {
+            MovePlayer();
+        }
     }
 
     private void Update()
@@ -57,5 +63,12 @@ public class PlayerMovement : MonoBehaviour
 
         rotationDirection.Set(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
         transform.up = rotationDirection;
+    }
+
+    private IEnumerator DelayStart()
+    {
+        paused = true;
+        yield return new WaitForSeconds(sceneStartDelay);
+        paused = false;
     }
 }
