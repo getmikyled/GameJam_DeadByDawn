@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 10572687}
   - component: {fileID: 10572686}
   - component: {fileID: 10572685}
+  - component: {fileID: 10572689}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: EndScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -225,6 +226,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &10572689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10572684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bca3259b33d1049920e857ac0c281f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &368128055
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,8 +273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.291, y: 0.5412528}
   m_AnchorMax: {x: 0.70661503, y: 0.90924186}
-  m_AnchoredPosition: {x: -134, y: 48}
-  m_SizeDelta: {x: -477, y: -218}
+  m_AnchoredPosition: {x: -187, y: 74}
+  m_SizeDelta: {x: -196.90002, y: -218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368128057
 MonoBehaviour:
@@ -283,7 +296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dead By Dawn
+  m_text: ESCAPED!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ae1ec6854fb81419be2f85d54394bb, type: 2}
   m_sharedMaterial: {fileID: 3525775253470304113, guid: d3ae1ec6854fb81419be2f85d54394bb, type: 2}
@@ -310,14 +323,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 144
-  m_fontSizeBase: 144
+  m_fontSize: 122.1
+  m_fontSizeBase: 122.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -397,7 +410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.43584502, y: 0.25250554}
   m_AnchorMax: {x: 0.56577003, y: 0.35013193}
-  m_AnchoredPosition: {x: 0.099998474, y: 0.5}
+  m_AnchoredPosition: {x: -306, y: 154}
   m_SizeDelta: {x: -0.24890137, y: -0.2649002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706346254
@@ -443,7 +456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 706346255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 10572689}
+        m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
+        m_MethodName: MainMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &706346255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ae1ec6854fb81419be2f85d54394bb, type: 2}
   m_sharedMaterial: {fileID: 3525775253470304113, guid: d3ae1ec6854fb81419be2f85d54394bb, type: 2}
@@ -685,8 +710,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 31.2
+  m_fontSizeBase: 31.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
