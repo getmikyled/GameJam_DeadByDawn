@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 8
   speed: 10
-  speedMultiplier: 25
+  speedMultiplier: 1
   speedDecreaser: 0.9
 --- !u!50 &7610020534681380956
 Rigidbody2D:
