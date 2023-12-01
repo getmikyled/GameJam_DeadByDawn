@@ -27,11 +27,15 @@ public class PlayerMovement : MonoBehaviour
         AssignVariables();
     }
 
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        MovePlayer();
+    }
 
     private void Update()
     {
         RotatePlayer();
-        MovePlayer();
     }
 
     void MovePlayer()
@@ -42,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(horizontalInput, verticalInput);
         direction.Normalize();
 
-        player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (direction * Time.deltaTime * speed));
+        player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (direction * Time.fixedDeltaTime * speed));
     }
 
     void RotatePlayer()
