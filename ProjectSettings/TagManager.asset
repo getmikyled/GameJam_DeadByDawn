@@ -7,6 +7,7 @@ TagManager:
   - Weapon
   - Enemy
   - Objective
+  - Obstructions
   layers:
   - Default
   - TransparentFX
