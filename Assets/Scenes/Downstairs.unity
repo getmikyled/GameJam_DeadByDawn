@@ -6182,6 +6182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 3459737720306007787, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3459737720306007788, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: spawnChance
       value: 100
@@ -6232,7 +6236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161885, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161887, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: m_Color.b
