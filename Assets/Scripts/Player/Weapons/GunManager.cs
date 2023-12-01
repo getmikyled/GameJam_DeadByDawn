@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunManager : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class GunManager : MonoBehaviour
     [SerializeField] AudioClip reloadSound;
     [Range(0f, 100f)]
     [SerializeField] float volume = 0.5f;
+
+    TextMeshProUGUI ammoText;
     
 
     protected virtual void Gun()
@@ -38,6 +41,8 @@ public class GunManager : MonoBehaviour
         Gun();
         FindBullets();
         player = GameObject.Find("Player").transform;
+
+        ammoText = GameObject.Find("UI Interface").transform.Find("AmmoCounter").Find("Text").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -70,13 +75,14 @@ public class GunManager : MonoBehaviour
                     currentBullet = bulletArray[bulletID];
                     Debug.Log("Shot bullet " + bulletID + bulletArray[bulletID].name + " / " + bulletArray.Length);
                     bulletID++;
-                    if (bulletID >= 7)
+                    if (bulletID > 6)
                     {
                         return;
                     }
                     currentBullet.GetComponent<Bullet>().Fire(player.up);
                     StartCoroutine(FireTimer(fireDelay));
                     currentBullet.position = player.position;
+                    ammoText.text = (6 - bulletID).ToString() + "/6";
                 }
                 catch (IndexOutOfRangeException) { }
             }
@@ -91,6 +97,7 @@ public class GunManager : MonoBehaviour
                 canReload = false;
                 StartCoroutine(ReloadTimer(reloadSound.length));
                 bulletID = 0;
+                ammoText.text = (6 - bulletID).ToString() + "/6";
             }
         }
     }
