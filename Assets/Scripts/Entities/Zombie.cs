@@ -33,8 +33,11 @@ public class Zombie : Entity
         {
             Kill();
         }
-            Move();
+    }
 
+    private void FixedUpdate()
+    {
+        Move();
     }
 
     // On collision activity

@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(horizontalInput, verticalInput);
         direction.Normalize();
 
-        player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (direction * Time.fixedDeltaTime * speed));
+        player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (direction * Time.deltaTime * speed));
     }
 
     void RotatePlayer()
