@@ -2444,7 +2444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: speed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: health
@@ -4525,7 +4525,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987250585}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4537,7 +4537,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &997544500
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,7 +4777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1063180158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4795,7 +4795,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -5449,7 +5449,7 @@ Transform:
   m_GameObject: {fileID: 1173832569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.124819, y: -0.48627466, z: 0.13742566}
-  m_LocalScale: {x: 2.7882514, y: 1.8836058, z: 1.8839}
+  m_LocalScale: {x: 2.7882514, y: 1.907151, z: 1.8839}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 874739188}
@@ -7435,7 +7435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: speed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6457964483857161953, guid: aa88e282a6393d849aae3b2bc74df89e, type: 3}
       propertyPath: health
@@ -7461,7 +7461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 682467366033760705, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: speed
-      value: 5
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 682467366033760706, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 682467366033760707, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: m_RootOrder
