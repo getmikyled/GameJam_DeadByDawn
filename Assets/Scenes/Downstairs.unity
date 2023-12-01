@@ -7470,7 +7470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 682467366033760705, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: speed
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 682467366033760707, guid: c6a60e543f78fec42a0e0a7a5aff8818, type: 3}
       propertyPath: m_RootOrder
