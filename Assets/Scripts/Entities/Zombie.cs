@@ -33,8 +33,11 @@ public class Zombie : Entity
         {
             Kill();
         }
-            Move();
+    }
 
+    private void FixedUpdate()
+    {
+        Move();
     }
 
     // On collision activity
@@ -62,7 +65,7 @@ public class Zombie : Entity
             direction = playerPosition - transform.position;
             direction.Normalize();
 
-            transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.deltaTime * speedMultiplier));
+            transform.GetComponent<Rigidbody2D>().MovePosition(transform.position + (direction * speed * Time.fixedDeltaTime * speedMultiplier));
         }
         transform.up = direction;
     }
